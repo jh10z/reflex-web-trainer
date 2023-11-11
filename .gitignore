@@ -34,12 +34,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# spring
 HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+application.properties
 
 ### STS ###
 .apt_generated
