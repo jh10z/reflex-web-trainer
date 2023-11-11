@@ -1,0 +1,6 @@
+#spring.data.mongodb.uri=
+spring.data.mongodb.host=
+spring.data.mongodb.port=
+spring.data.mongodb.database=
+
+logging.level.org.springframework.security=DEBUG
