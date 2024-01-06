@@ -24,7 +24,7 @@ public class AuthController {
         return "User Already Exists...";
     }
 
-    @PostMapping(value = "/login")
+    @PostMapping(path = "/login", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
     public String login(@ModelAttribute User user) {
 
         return "TODO";

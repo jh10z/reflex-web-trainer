@@ -27,7 +27,7 @@ public class UserService implements UserDetailsService {
     public boolean registerUser(User user) {
         if(userRepository.findByUsername(user.getUsername()).isPresent()) return false;
 
-        //Encode Password
+        //Encode Password - LOOK INTO: Using AuthManager
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         //Save User to DB
